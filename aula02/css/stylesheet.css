@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+
+.html{
+    scroll-behavior: smooth;
+}
+
+.toast{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}

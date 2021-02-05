@@ -1,176 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS aula #02</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/8ac0ce319f.js" crossorigin="anonymous"></script>
+    <title>InicioBootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-    <header id="top" class="container content-default bg-color--purple text-center">
-        <h2>iniciando com flex box</h2>
-        <h2>Primeiro elemento</h2>
+    <header class="align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container m-auto" width="100%">
+                <a href="#" class="navbar-brand">
+                    <img src="img/bootstrap-5.svg" class="img-fluid" width="200px" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Entrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Desabilitado</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <div class="container content-default bg-color--blue text-center">
-        <h2>Display flex</h2>
-        <h2>Display flex wrap</h2>
-        <div class="content-flex content-default">
-            <div class="content-default bg-color--purple flex-wrap">
-                <h3>#01</h3>
-            </div>
-            <div class="content-default bg-color--purple flex-wrap">
-                <h3>#01</h3>
-            </div>
-            <div class="content-default bg-color--purple flex-wrap">
-                <h3>#01</h3>
-            </div>
+    <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <img class = "rounded me-2" src="https://picsum.photos/seed/picsum/20/" alt="">
+            <strong class="me-auto">Toast!</strong>
+            <small  class="text-muted">2 min ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast hide" aria-label="Close"></button>
         </div>
-        <h2>Display: grid : wrap</h2>
-        <div class="content-flex--direction content-default flex-wrap bg-color--purple">
-            <h3>@01</h3>
+        <div class="toast-body">
+            Hello, world! This is a toast message.
         </div>
-        <div class="content-flex--direction content-default flex-wrap bg-color--purple">
-            <h3>@02</h3>
-        </div>
-        <div class="content-flex--direction content-default flex-wrap bg-color--purple">
-            <h3>@03</h3>
-        </div>
-
-        <h2>Display: grid | flex item</h2>
-        <div class="content-default content-flex">
-            <div class="content-flex--direction bg-color--purple flex-item--1">
-                <h3>$01</h3>
+    </div>
+    <div class="container">
+        <div class="row align-items-center mb-5 mt-2">
+            <div class="col-6 mt-5">
+                <h3 class="fluid text-center">Formulário Login</h3>
+                <p class="fs-3 fluid text-center">Seja Bem vindo ao Bootstrap</p>
+                <div class="d-flex justify-content-center">
+                    <img class="img-fluid" src="https://picsum.photos/seed/picsum/500/" alt="">
+                </div>
             </div>
-            <div class="content-flex--direction bg-color--purple flex-item--1">
-                <h3>$02</h3>
-            </div>
-            <div class="content-flex--direction bg-color--purple flex-item--1">
-                <h3>$03</h3>
+            <div class="col-6 align-items-center">
+                <form class="border p-5 mt-5">
+                    <h2 class="p-4">Informe aqui seu usuário e senha</h2>
+                    <div class="mb-5">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-5">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-5 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>
         </div>
     </div>
-
-    <div id="01" class="container content-default bg-color--pink text-center">
-        <h2>Display: flex | flex item</h2>
-        <div class="content-flex content-default">
-            <div class="content-flex--direction bg-color--purple flex-item--1">
-                <h3>*01</h3>
-            </div>
-            <div class="content-flex--direction bg-color--purple flex-item--2">
-                <h3>*02</h3>
-            </div>
-            <div class="content-flex--direction bg-color--purple flex-item--3">
-                <h3>*03</h3>
-            </div>
+    <div class="container-fluid">
+        <div class="row align-items-center bg-info mt-5 p-5">
+            <h2 class="text-center">What is Lorem Ipsum?</h2>
+            <p class="fs-4 text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
-        <h2> Display: flex-direction | flex item</h2>
-        <div class="content-flex content-default content-flex--reverse">
-            <div class="content-default bg-color--blue flex-item--1">
-                <h3>+01</h3>
+    </div>
+    <div class="container">
+        <div class="row bg-light pt-3">
+            <div class="col-7">
+                <img class="img-fluid" src="https://picsum.photos/seed/picsum/800/600" alt="">
             </div>
-            <div class="content-default bg-color--blue flex-item--2">
-                <h3>+02</h3>
-            </div>
-            <div class="content-default bg-color--blue flex-item--3">
-                <h3>+03</h3>
+            <div class="col-5">
+                <p class="fs-5 text-end"> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
             </div>
         </div>
     </div>
-    <div class="container content-default bg-color--yellow text-center">
-        <h2>Justify contents</h2>
-        <div class="content-flex content-justify">
-            <div class="bg-color--purple content-default content-space--default">
-                <h3>Bloco 01</h3>
+    <div class="container-fluid">
+        <img class="img-fluid" src="https://picsum.photos/seed/picsum/1000/800" width="100%" alt="">
+    </div>
+    <div class="container">
+        <div class="row pt-5">
+            <h1 class="text-center mb-4">Why do we use it?</h1>
+            <div class="col-7 align-items-center">
+                <p class="text-center fs-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
             </div>
-            <div class="bg-color--purple content-default content-space--default">
-                <h3>Bloco 02</h3>
-            </div>
-            <div class="bg-color--purple content-default content-space--default">
-                <h3>Bloco 03</h3>
-            </div>
-        </div>
-
-        <h2>Justify contents - between</h2>
-        <div class="content-flex content-justify--between">
-            <div class="bg-color--purple content-default content-space--default">
-                <h3>Bloco 01</h3>
-            </div>
-            <div class="bg-color--purple content-default content-space--default">
-                <h3>Bloco 02</h3>
-            </div>
-            <div class="bg-color--purple content-default content-space--default">
-                <h3>Bloco 03</h3>
+            <div class="col-5 d-block mt-3">
+                <div class="d-flex justify-content-center"> 
+                    <img class="rounded mx-auto" src="https://picsum.photos/seed/picsum/400" alt="">
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn btn-primary mt-3">Clique aqui e veja mais</button>
+                </div>
             </div>
         </div>
     </div>
-
-    <div id="02" class="container content-default bg-color--purple text-center">
-        <h2>Align item</h2>
-        <div class="content-flex content-align content-justify--between">
-            <div class="bg-color--yellow content-default content-space--default">
-                <h3>informação 01</h3>
-                <h3>informação 02</h3>
-                <h3>informação 03</h3>
-            </div>
-            <div class="bg-color--yellow content-default content-space--default">
-                <h3>informação 04</h3>
-                <h3>informação 05</h3>
-            </div>
-            <div class="bg-color--yellow content-default content-space--default">
-                <h3>informação 06</h3>
-            </div>
-        </div>
-    </div>
-
-    <div id="03" class="container-paralax content-default bg-img--version--1 content-paralax--data">
-        <div>
-            <h1>Container with paralax - 01</h1>
-            <p>Mussum Ipsum, cacilds vidis litro abertis.<br/> Mais vale um bebadis conhecidiss, que um alcoolatra anonimis.<br/> Delegadis gente finis, bibendum egestas augue arcu ut est.<br/> Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.<br/> Detraxit consequat et quo num tendi nada.</p>
-        </div>
-    </div>
-
-    <div id="04" class="container-paralax content-default bg-img--version--2 content-paralax--data">
-        <div>
-            <h1>Container with paralax - 02 </h1>
-            <p>Mussum Ipsum, cacilds vidis litro abertis.<br/> Mais vale um bebadis conhecidiss, que um alcoolatra anonimis.<br/> Delegadis gente finis, bibendum egestas augue arcu ut est.<br/> Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.<br/> Detraxit consequat et quo num tendi nada.</p>
-        </div>
-    </div>
-
-    <div id="05" class="container-paralax content-default bg-img--version--3 content-paralax--data">
-        <div>
-            <h1>Container with paralax - 03 </h1>
-            <p>Mussum Ipsum, cacilds vidis litro abertis.<br/> Mais vale um bebadis conhecidiss, que um alcoolatra anonimis.<br/> Delegadis gente finis, bibendum egestas augue arcu ut est.<br/> Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.<br/> Detraxit consequat et quo num tendi nada.</p>
-        </div>
-    </div>
-
-    <div class="content-left--main">
-        <a href="#01">
-            <i class="fab fa-rocketchat"></i>
-        </a>
-        <a href="#02">
-            <i class="fas fa-globe-europe"></i>
-        </a>
-        <a href="#03">
-            <i class="far fa-paper-plane"></i>
-        </a>
-        <a href="#04">
-            <i class="fab fa-canadian-maple-leaf"></i>
-        </a>
-        <a href="#05">
-            <i class="fas fa-spa"></i>
-        </a>
-    </div>
-
-    <div class="content-top--button">
-        <a href="#top">
-            <i class="fas fa-arrow-circle-up"></i>
-        </a>
-    </div>
-
-
-    <footer>
-            <p>Copyright</p>
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p>© Copyrigth 2021</p>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 </html>
