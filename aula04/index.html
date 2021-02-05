@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+</head>
+<body>
+    <div id="search_app" class="container-head">
+        <div class="search-div">
+            <h1 class="titulo-header">Flickr</h1>
+            <form class="search-form">
+                <input class="input-search texto-leve-medio" type="text" placeholder="Search...">
+                <button class="btn-submit" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="api-result">
+            <div class="loading-div">
+                <h2 id="search-title" class="texto-leve-medio search-word"></h2>
+                <div id="svg-div" class="loading-div-disable">
+                    <img src="imgs/tail-spin.svg" alt="">
+                </div>
+            </div>
+            <div class="photos-div">
+                <!-- api response -->
+            </div>
+        </div>
+    </div>
+    <script src="script/app.js"></script>
+</body>
+</html>

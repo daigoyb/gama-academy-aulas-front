@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;700;900&display=swap');
+
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Inconsolata', monospace;
+}
+
+input{
+    font-family: 'Inconsolata', monospace;
+}
+
+
+.titulo-header{
+    font-weight: 700;
+    font-size: 4em;
+    color: aliceblue;
+}
+
+.container-head{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url('https://picsum.photos/id/870/1500/1400?grayscale&blur=2;');
+}
+
+.search-div{
+    display: contents;
+    align-items: center;
+}
+
+.texto-leve-medio{
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.search-word{
+    color: #fff;
+}
+
+.input-search{
+    width: 23rem;
+    height: 2.5em;
+    text-align: center;
+    border-radius: 25px;
+    border: 0;
+}
+
+input.input-search:focus{
+    border: 3px solid #1ee9a5;
+    border-radius: 25px;
+    outline-width: 0;
+}
+
+.btn-submit{
+    background: #1ee9a5;
+    border: 0;
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 99999px;
+}
+
+button.btn-submit:focus{
+    outline-width: 0;
+}
+
+button.btn-submit:hover{
+    background: #fff;
+    transition: 1s;
+}
+
+.loading-div{
+    display: block;
+    text-align: center;
+}
+
+.loading-div-disable{
+    pointer-events: none;
+    opacity: 0;
+}
+
+.loading-div-enable{
+    pointer-events: visible;
+    opacity: 1;
+}
+
+.api-result{
+    margin-top: 20px;
+}
+
+.photos-div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.photos-div a{
+    margin: 2px;
+    border: 1px solid #fff;
+    padding: 2px; 
+    background-image: url('https://picsum.photos/id/870/1500/1400?grayscale&blur=2;');
+}
+
+.photos-div a:hover{
+    transform: scale(1.1);
+    z-index: 5;
+    transition: 0.5s;
+    box-shadow: 2px 3px 18px -4px rgba(0,0,0,0.5);
+}
+
+
+
+
+
+
+

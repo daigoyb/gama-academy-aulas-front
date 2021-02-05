@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+footer{
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2, h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+h4, h5, h6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.content-default{
+    padding: 20px;
+}
+
+.content-space--default{
+    margin: 2px;
+    border-radius: 5px;
+
+}
+
+.text-center{
+    text-align: center;
+}
+
+.content-flex{
+    display: flex
+}
+.content-flexgrid{
+    display: grid;
+}
+
+.content-flex--direction{
+    flex-direction: row;
+}
+
+.content-flex--reverse{
+    flex-direction: row-reverse;
+}
+
+.content-justify{
+    justify-content: center;
+}
+
+.content-align{
+    align-items: start;
+}
+
+.content-justify--between{
+    justify-content: space-between;
+}
+
+.bg-color--purple{
+    background: #800080;
+    color: #fff;
+}
+
+.bg-color--yellow{
+    background: #FFFF00;
+    color: #800080;
+}
+
+.bg-color--pink{
+    background: #FFC0CB;
+    color: #000;
+}
+
+.bg-color--blue{
+    background: #1414a7;
+    color: #fff;
+}
+
+/* paralax */
+.container-paralax{
+    height: 100vh;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content-paralax--data{
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bg-img--version--1{
+    background-image: url('https://www.bykamy.com.br/media/magpleasure/mpblog/upload/5/7/57b1bf7d80506c13b5a9d9ad3aaf491c.jpg');
+}
+
+.bg-img--version--2{
+    background-image: url('https://gabrielwickbold.com.br/wp-content/uploads/2019/04/gw-lisboa.jpg');
+}
+
+.bg-img--version--3{
+    background-image: url('https://www.fotografemelhor.com.br/site/wp-content/uploads/2020/04/baixa_1_abre_Lays_Orsini_1356.jpg');
+}
+
+/* left main */
+.content-left--main{
+    position: fixed;
+    display: grid;
+    left: 0;
+    top: 30%;
+    background: #9000c5;
+    padding: 15px 10px 15px 10px;
+    border-radius: 0 15px 15px 0;
+    box-shadow: 3px 1px 21px -5px rgba(0,0,0,0.75);
+}
+
+.content-left--main i {
+    font-size: 40px;
+    color: #fff;
+}
+
+.content-left--main a {
+    margin: 5px 0px 5px 0px ;
+}
+
+.content-left--main i:hover {
+    font-size: 50px;
+    color: #FFFF00;
+    transition: 1s;
+}
+
+/* top button */
+.content-top--button{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: #cc19bb;
+    border-radius: 100px;
+    padding: 10px;
+    text-align: center;
+    transition: 1s;
+    box-shadow: 3px 1px 21px -5px rgba(0,0,0,0.75);
+}
+
+.content-top--button i{
+    font-size: 45px;
+    color: #fff;
+}
+.content-top--button:hover{
+    background-color: #1414a7;
+    transition: 1s;
+}
+
+
+/* flex wrap */
+.flex-wrap{
+    flex: 1;
+    margin: 2px;
+    width: 33%;
+    justify-content: center;
+}
+
+.flex-wrap--fluid{
+    flex: 1;
+    margin: 2px;
+    justify-content: center;
+}
+
+/* flex item */
+.flex-item--1{
+    flex: 1;
+    margin: 2px;
+}
+
+.flex-item--2{
+    flex: 2;
+    margin: 2px;
+}
+
+.flex-item--3{
+    flex: 3;
+    margin: 2px; 
+}
+
+
+

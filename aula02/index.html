@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS aula #02</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/8ac0ce319f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="top" class="container content-default bg-color--purple text-center">
+        <h2>iniciando com flex box</h2>
+        <h2>Primeiro elemento</h2>
+    </header>
+    <div class="container content-default bg-color--blue text-center">
+        <h2>Display flex</h2>
+        <h2>Display flex wrap</h2>
+        <div class="content-flex content-default">
+            <div class="content-default bg-color--purple flex-wrap">
+                <h3>#01</h3>
+            </div>
+            <div class="content-default bg-color--purple flex-wrap">
+                <h3>#01</h3>
+            </div>
+            <div class="content-default bg-color--purple flex-wrap">
+                <h3>#01</h3>
+            </div>
+        </div>
+        <h2>Display: grid : wrap</h2>
+        <div class="content-flex--direction content-default flex-wrap bg-color--purple">
+            <h3>@01</h3>
+        </div>
+        <div class="content-flex--direction content-default flex-wrap bg-color--purple">
+            <h3>@02</h3>
+        </div>
+        <div class="content-flex--direction content-default flex-wrap bg-color--purple">
+            <h3>@03</h3>
+        </div>
+
+        <h2>Display: grid | flex item</h2>
+        <div class="content-default content-flex">
+            <div class="content-flex--direction bg-color--purple flex-item--1">
+                <h3>$01</h3>
+            </div>
+            <div class="content-flex--direction bg-color--purple flex-item--1">
+                <h3>$02</h3>
+            </div>
+            <div class="content-flex--direction bg-color--purple flex-item--1">
+                <h3>$03</h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="01" class="container content-default bg-color--pink text-center">
+        <h2>Display: flex | flex item</h2>
+        <div class="content-flex content-default">
+            <div class="content-flex--direction bg-color--purple flex-item--1">
+                <h3>*01</h3>
+            </div>
+            <div class="content-flex--direction bg-color--purple flex-item--2">
+                <h3>*02</h3>
+            </div>
+            <div class="content-flex--direction bg-color--purple flex-item--3">
+                <h3>*03</h3>
+            </div>
+        </div>
+        <h2> Display: flex-direction | flex item</h2>
+        <div class="content-flex content-default content-flex--reverse">
+            <div class="content-default bg-color--blue flex-item--1">
+                <h3>+01</h3>
+            </div>
+            <div class="content-default bg-color--blue flex-item--2">
+                <h3>+02</h3>
+            </div>
+            <div class="content-default bg-color--blue flex-item--3">
+                <h3>+03</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container content-default bg-color--yellow text-center">
+        <h2>Justify contents</h2>
+        <div class="content-flex content-justify">
+            <div class="bg-color--purple content-default content-space--default">
+                <h3>Bloco 01</h3>
+            </div>
+            <div class="bg-color--purple content-default content-space--default">
+                <h3>Bloco 02</h3>
+            </div>
+            <div class="bg-color--purple content-default content-space--default">
+                <h3>Bloco 03</h3>
+            </div>
+        </div>
+
+        <h2>Justify contents - between</h2>
+        <div class="content-flex content-justify--between">
+            <div class="bg-color--purple content-default content-space--default">
+                <h3>Bloco 01</h3>
+            </div>
+            <div class="bg-color--purple content-default content-space--default">
+                <h3>Bloco 02</h3>
+            </div>
+            <div class="bg-color--purple content-default content-space--default">
+                <h3>Bloco 03</h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="02" class="container content-default bg-color--purple text-center">
+        <h2>Align item</h2>
+        <div class="content-flex content-align content-justify--between">
+            <div class="bg-color--yellow content-default content-space--default">
+                <h3>informação 01</h3>
+                <h3>informação 02</h3>
+                <h3>informação 03</h3>
+            </div>
+            <div class="bg-color--yellow content-default content-space--default">
+                <h3>informação 04</h3>
+                <h3>informação 05</h3>
+            </div>
+            <div class="bg-color--yellow content-default content-space--default">
+                <h3>informação 06</h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="03" class="container-paralax content-default bg-img--version--1 content-paralax--data">
+        <div>
+            <h1>Container with paralax - 01</h1>
+            <p>Mussum Ipsum, cacilds vidis litro abertis.<br/> Mais vale um bebadis conhecidiss, que um alcoolatra anonimis.<br/> Delegadis gente finis, bibendum egestas augue arcu ut est.<br/> Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.<br/> Detraxit consequat et quo num tendi nada.</p>
+        </div>
+    </div>
+
+    <div id="04" class="container-paralax content-default bg-img--version--2 content-paralax--data">
+        <div>
+            <h1>Container with paralax - 02 </h1>
+            <p>Mussum Ipsum, cacilds vidis litro abertis.<br/> Mais vale um bebadis conhecidiss, que um alcoolatra anonimis.<br/> Delegadis gente finis, bibendum egestas augue arcu ut est.<br/> Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.<br/> Detraxit consequat et quo num tendi nada.</p>
+        </div>
+    </div>
+
+    <div id="05" class="container-paralax content-default bg-img--version--3 content-paralax--data">
+        <div>
+            <h1>Container with paralax - 03 </h1>
+            <p>Mussum Ipsum, cacilds vidis litro abertis.<br/> Mais vale um bebadis conhecidiss, que um alcoolatra anonimis.<br/> Delegadis gente finis, bibendum egestas augue arcu ut est.<br/> Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.<br/> Detraxit consequat et quo num tendi nada.</p>
+        </div>
+    </div>
+
+    <div class="content-left--main">
+        <a href="#01">
+            <i class="fab fa-rocketchat"></i>
+        </a>
+        <a href="#02">
+            <i class="fas fa-globe-europe"></i>
+        </a>
+        <a href="#03">
+            <i class="far fa-paper-plane"></i>
+        </a>
+        <a href="#04">
+            <i class="fab fa-canadian-maple-leaf"></i>
+        </a>
+        <a href="#05">
+            <i class="fas fa-spa"></i>
+        </a>
+    </div>
+
+    <div class="content-top--button">
+        <a href="#top">
+            <i class="fas fa-arrow-circle-up"></i>
+        </a>
+    </div>
+
+
+    <footer>
+            <p>Copyright</p>
+    </footer>
+</body>
+</html>
