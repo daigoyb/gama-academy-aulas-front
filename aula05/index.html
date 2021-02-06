@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <title>Chuck Norris Jokes</title>
+</head>
+<body>
+    <nav id="categories">
+        <ul>
+            <li onclick="getJoke('animal')">Animal</li>
+            <li onclick="getJoke('career')">Carrer</li>
+            <li onclick="getJoke('celebrity')">Celebrity</li>
+            <li onclick="getJoke('dev')">Dev</li>
+            <li onclick="getJoke('explicit')">Explicit</li>
+            <li onclick="getJoke('fashion')">Fashion</li>
+            <li onclick="getJoke('food')">Food</li>
+            <li onclick="getJoke('history')">History</li>
+            <li onclick="getJoke('money')">Money</li>
+            <li onclick="getJoke('movie')">Movie</li>
+            <li onclick="getJoke('music')">Music</li>
+            <li onclick="getJoke('political')">Political</li>
+            <li onclick="getJoke('religion')">Religion</li>
+            <li onclick="getJoke('science')">Science</li>
+            <li onclick="getJoke('sport')">Sport</li>
+            <li onclick="getJoke('travel')">Travel</li>            
+        </ul>
+    </nav>
+    <div id="root">
+        <div class="query-search">
+            <form class="example">
+                <input type="text" placeholder="Search.." class="search-input">
+                <button onclick="submitSearchQueryJoke()" type="button" class="search-btn"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="joke-result">
+
+        </div>
+    </div>
+
+    <script src="assets/app.js"></script>
+</body>
+</html>
